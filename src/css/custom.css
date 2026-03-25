@@ -1,0 +1,194 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #6d4aff; /* Proton-like purple */
+  --ifm-color-primary-dark: #5b3de6;
+  --ifm-color-primary-darker: #5237cf;
+  --ifm-color-primary-darkest: #412ba3;
+  --ifm-color-primary-light: #7e61ff;
+  --ifm-color-primary-lighter: #876dff;
+  --ifm-color-primary-lightest: #a08aff;
+  --reto-bg-light: #f4f2ff;
+  --reto-border: #e2e2ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #a08aff;
+  --ifm-color-primary-dark: #876dff;
+  --ifm-color-primary-darker: #7e61ff;
+  --ifm-color-primary-darkest: #6d4aff;
+  --ifm-color-primary-light: #b9a8ff;
+  --ifm-color-primary-lighter: #c5b8ff;
+  --ifm-color-primary-lightest: #e2daff;
+  --reto-bg-light: #1e1e2d;
+  --reto-border: #2d2d44;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Reto Help Center Styles */
+
+.reto-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.reto-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary-darkest);
+  margin-bottom: 1.5rem;
+}
+
+[data-theme='dark'] .reto-hero h1 {
+  color: #fff;
+}
+
+.reto-search-bar {
+  max-width: 600px;
+  margin: 0 auto 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.reto-search-input {
+  width: 100%;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid var(--reto-border);
+  background: var(--ifm-background-color);
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(109, 74, 255, 0.05);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.reto-search-btn {
+  position: absolute;
+  right: 6px;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 0.7rem 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.reto-search-btn:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+.reto-search-input:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 15px rgba(109, 74, 255, 0.2);
+}
+
+.reto-search-icon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ifm-color-primary);
+  font-size: 1.2rem;
+}
+
+.reto-categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reto-category-pill {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: var(--reto-bg-light);
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reto-category-pill:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.reto-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+
+.reto-product-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+[data-theme='dark'] .reto-product-card {
+  background: #242435;
+  border-color: #2d2d44;
+}
+
+.reto-product-card:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(109, 74, 255, 0.12);
+}
+
+.reto-product-card span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #31217e;
+  font-family: 'Inter', sans-serif;
+}
+
+[data-theme='dark'] .reto-product-card span:last-child {
+  color: #e2e2ff;
+}
+
+.reto-emoji-wrapper {
+  font-size: 2.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+@media (max-width: 768px) {
+  .reto-hero h1 {
+    font-size: 2.5rem;
+  }
+}
