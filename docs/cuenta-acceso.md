@@ -1,41 +1,28 @@
+## 2. Mi Cuenta y Acceso
+
+**Descripción del problema:** El usuario no recibe el correo electrónico de activación de cuenta o el enlace para restablecer su contraseña.
+
+**Cómo se resuelve:** Pedir al usuario que:
+1. Revise su bandeja de Spam o Correo no deseado.
+2. Verifique haber escrito bien su correo.
+3. Si el enlace caducó, generar uno nuevo desde la opción "Olvidé mi contraseña".
+
+**Contexto adicional:** Los enlaces tienen un tiempo de expiración corto por motivos de seguridad. Si los pasos anteriores fallan, derivar a soporte técnico.
+
+**Cuándo debe escalar el caso:**
+* Si el usuario confirma que ya revisó la carpeta de Spam, que el correo es correcto, ha esperado un tiempo prudente (ej. 15 minutos) y el mensaje sigue sin llegar.
+* Si el usuario reporta que al hacer clic en "Enviar" la página se queda congelada o le muestra un código de error en pantalla.
+* Si el usuario indica que usa un correo corporativo o institucional (los cortafuegos de su empresa podrían estar bloqueando la recepción y requiere revisión técnica).
+
 ---
-sidebar_position: 3
-title: Mi Cuenta y Acceso
----
 
-# Mi Cuenta y Acceso 🔑
+**Descripción del problema:** La cuenta del usuario aparece como "Inactiva" o, al intentar registrarse, el sistema le marca error diciendo que el correo/teléfono ya existe.
 
-Encuentra solución a los problemas más comunes relacionados con el registro, activación y recuperación de tu cuenta.
+**Cómo se resuelve:** Si la cuenta fue eliminada anteriormente, el usuario debe escribir a info@reto.education para solicitar su reactivación.
 
-## Problemas con correos de activación o contraseña
+**Contexto adicional:** El sistema bloquea nuevos registros con datos previamente ingresados para evitar cuentas duplicadas.
 
-Si no recibes el correo de activación o el enlace para restablecer tu contraseña, sigue estos pasos:
-
-1. **Revisa tu bandeja de Spam:** A veces los correos automáticos son filtrados incorrectamente.
-2. **Verifica tu dirección:** Asegúrate de que el correo electrónico esté escrito correctamente.
-3. **Enlace caducado:** Por seguridad, los enlaces expiran pronto. Si ha pasado mucho tiempo, genera uno nuevo desde la opción *"Olvidé mi contraseña"*.
-
-:::danger\[Cuándo contactar a soporte]
-Si has seguido los pasos anteriores y:
-
-* El mensaje no llega tras **15 minutos**.
-* La página se congela al hacer clic en "Enviar".
-* Usas un correo corporativo que podría estar bloqueando el dominio.
-  :::
-
-## Estado de la cuenta e inicio de sesión
-
-### Cuenta Inactiva
-
-Si tu cuenta aparece como "Inactiva" o recibes un error diciendo que el correo/teléfono ya existe al intentar registrarte:
-
-* **Cuentas eliminadas:** Si eliminaste tu cuenta anteriormente, debes escribir a **[info@reto.education](mailto:info@reto.education)** para solicitar la reactivación.
-* **Datos duplicados:** El sistema impide registros con datos ya existentes para evitar duplicidad.
-
-:::warning\[Casos especiales de escalación]
-Contacta con nuestro equipo técnico si:
-
-* El sistema indica que tus datos "ya existen" pero es la primera vez que te registras.
-* Hay una contradicción: el sistema dice que el correo "ya existe" al registrarte, pero "no existe" al intentar recuperar la contraseña.
-* Ya solicitaste la reactivación a soporte pero la plataforma sigue mostrando el mensaje de "Cuenta Inactiva".
-  :::
+**Cuándo debe escalar el caso:**
+* Si el usuario asegura que sus datos son nuevos y nunca los ha usado en la plataforma, pero el sistema insiste en que ya existen.
+* Si ocurre una contradicción del sistema: el usuario no puede registrarse porque el sistema dice que una cuenta asociada a sus datos "ya existe", pero al intentar recuperar la contraseña, el sistema le dice que el correo "no existe".
+* Si el usuario menciona que ya contactó a info@reto.education, le confirmaron la reactivación, pero la plataforma le sigue mostrando el mensaje de "Cuenta Inactiva".
